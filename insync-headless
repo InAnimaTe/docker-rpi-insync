@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /root/insync-portable
+LC_TIME=C exec ./insync-portable "$@"

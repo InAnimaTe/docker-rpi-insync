@@ -1,0 +1,19 @@
+#!/usr/bin/with-contenv bash
+
+if [ "$DEBUG_MODE" = "TRUE" ] || [ "$DEBUG_MODE" = "true" ];  then
+  set -x
+fi
+
+mkdir -p /root/.config/Insync
+
+### Sanity Test
+if [ -z "${INSYNC1_USERNAME}" ]; then
+    echo "** [insync] ERROR: Please set your \$INSYNC1_USERNAME variable with the Google Drive Account"
+    exit 1
+fi
+
+if [ -z "${INSYNC1_AUTH_CODE}" ]; then
+    echo "** [insync] ERROR: No Authentication Code Provided"
+    echo "** [insync] ERROR: Visit https://goo.gl/jv797S and follow the steps"
+    exit 1
+fi
