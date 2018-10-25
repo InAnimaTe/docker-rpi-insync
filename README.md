@@ -22,6 +22,7 @@ Insync requires you download their bz2 "portable" package for utilization on rpi
 * https://blog.timekit.io/google-oauth-invalid-grant-nightmare-and-how-to-fix-it-9f4efaf1da35
 * https://github.com/just-containers/s6-overlay/issues/120#issuecomment-165094014
 
+> **Note** I modified this container for my use hence it is missing a few checks and niceties (including testing). I don't recommend you try using this unless you know what you're doing and like rolling up your sleeves. However, it will work swimmingly given you pass the right variables and have no alternate plans...
 
 -----------------------------------------------------------
 
